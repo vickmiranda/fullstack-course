@@ -14,7 +14,11 @@ h1 {
 }
 
 div#container {
-  background-color: #00FFFF;
+  background-color: #FF00FF;
+  /*this allows the brown p to jump into its ancestor which is div element*/
+  position: relative;
+  top: 50px;
+  left: 50px;
 }
 p {
   width: 50px;
@@ -24,15 +28,26 @@ p {
 }
 #p1 {
   background-color: #A52A2A;
+  /*relative pos preserves the space of the element
+  the rest "think" it is still there*/
+  position: relative; 
+  top: 65px;
+  left: 65px;
 }
 #p2 {
   background-color: #DEB887;
 }
 #p3 {
   background-color: #5F9EA0;
+  position: relative;
+  top: 65px;
+  left: 65px;
 }
 #p4 {
   background-color: #FF7F50;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 </style>

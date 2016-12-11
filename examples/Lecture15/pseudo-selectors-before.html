@@ -5,7 +5,43 @@
 <title>Pseudo Class Selectors</title>
 <style>
 /* Styles go here. */
+header li{
+  /*remove bullet points*/
+  list-style: none
+}
+a:link, a:visited{
+  text-decoration: none;
+  background-color: magenta;
+  border: 2px solid blue;
+  color: darkblue;
+  
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 1px;
+}
 
+a:hover, a:active{
+  background-color: purple;
+  color: yellow;
+}
+
+/*this is to use the nth element pseudo thing*/
+header li:nth-child(3){
+  font-size: 24px;
+} 
+
+section div:nth-child(odd):hover{
+  background-color: green;
+}
+
+section div:nth-child(odd){
+  background-color: grey;
+}
+
+section div:nth-child(even):hover{
+  background-color: yellow;
+}
 
 </style>
 </head>
